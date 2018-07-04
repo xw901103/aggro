@@ -10,9 +10,16 @@ import (
   "log"
 )
 
+type DbConfig struct {
+  Is string `json:"is"`
+  Hostname string `json:"hostname"`
+  Port int `json:"port"`
+}
+
 type RuntimeConfig struct {
   Hostname string `json:"hostname"`
   Port int `json:"port"`
+  Db DbConfig `json:"db"`
 }
 
 func getRuntimeConfig(path string) (config RuntimeConfig, err error) {
