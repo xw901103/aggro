@@ -1,0 +1,9 @@
+{
+  "hostname": "localhost",
+  "port": 8880,
+  "db": {
+    "is": "cockroach",
+    "hostname": "localhost",
+    "port": 26257
+  }
+}
